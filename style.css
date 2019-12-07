@@ -40,5 +40,6 @@ h1{
 .option{
     border: .2em black solid;
     margin: .2em;
+    vertical-align: middle;
 }
 
