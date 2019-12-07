@@ -2,10 +2,12 @@
 font-family: 'Montserrat', sans-serif; */
 /* https://coolors.co/fda87f-6a5510-6e7c2b-6d744b-85a2c6 */
 
-
+/* Base Styles */
+/* Mobile First */
 body{
     text-align: center;
     font-size: 1em;
+    margin: 10% 5% 0 5%;
 }
 
 h1{
@@ -13,33 +15,100 @@ h1{
     font-family: 'Merriweather', serif;
     font-size: 2.2em;
     color: #6A5510;
-    
-}
-.directions{
-    color:#6A5510;
 }
 
+h2{
+    color: #6A5510; 
+    font-size: 1.4em;  
+}
+
+h3{
+    color: black;
+    font-size: 1.7em;
+}
 
 
-.questions{
+header img{
+    max-width: 75%;
+    border: .25em solid #6e7c2b;
+}
+
+.questions, .directions{
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 .q{
-    color: black;
+    margin: 20% 0;
 }
 
+
 .answer{
-    
-    
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
 .option{
-    border: .2em black solid;
-    margin: .2em;
-    vertical-align: middle;
+    border: .2em #6d744b solid;
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 5%;
+    font-size: 1.3em;
 }
 
+footer{
+    font-size: .9em;
+}
+
+/* ------------------------- */
+
+@media only screen and (min-width: 768px){
+    h1{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.75em;
+    }
+
+    .option{
+        font-size: 1.7em;
+    }
+
+    .q{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    footer{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        margin: 5% 15%;
+    }
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+   .q, .one{
+       margin-top: 7%
+   }
+   .option{
+       padding-right: 0;
+       padding-left: 0; 
+   }
+   .answer{
+       margin: 0 10%;
+   }
+}
