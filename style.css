@@ -1,0 +1,44 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; */
+/* https://coolors.co/fda87f-6a5510-6e7c2b-6d744b-85a2c6 */
+
+
+body{
+    text-align: center;
+    font-size: 1em;
+}
+
+h1{
+    margin: 5%;
+    font-family: 'Merriweather', serif;
+    font-size: 2.2em;
+    color: #6A5510;
+    
+}
+.directions{
+    color:#6A5510;
+}
+
+
+
+.questions{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.q{
+    color: black;
+}
+
+.answer{
+    
+    
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.option{
+    border: .2em black solid;
+    margin: .2em;
+}
+
