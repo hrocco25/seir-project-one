@@ -11,11 +11,15 @@
 // once it is clicked do not let the user click any other options
 // show the correct answer 
 
-const correctOrIncorrect = document.createElement('div')
-
+const incorrect = document.querySelector('.incorrect')
 const correct =document.querySelector('.correct')
 
+incorrect.addEventListener('click', incorrectAnswer)
 correct.addEventListener('click', correctAnswer)
+
+function incorrectAnswer(){
+    console.log('first incorrect answer')
+}
 
 function correctAnswer(){
     console.log('correct answer for question one')
@@ -28,8 +32,7 @@ function correctAnswer(){
     img.setAttribute('src', 'https://media.gettyimages.com/photos/pikes-peak-avenue-colorado-springs-picture-id92414615?b=1&k=6&m=92414615&s=612x612&w=0&h=Ik_wIFzbstuJ1gbSdb87saTejsfsPxdc_hfvT96wWds=')
     response.appendChild(img)
     img.style.width= '50%'
-    img.style.border= '.15em solid #6d744b'
-    
+    img.style.border= '.15em solid #6d744b' 
 }
 
 //how do i get all of the .corrects to work in one function
