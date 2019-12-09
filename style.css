@@ -64,6 +64,19 @@ header img{
     font-size: .8em;
 }
 
+/* adding style for elements added when correct answer is clicked */
+.response{
+    display: grid;
+    grid-template: repeat(1,1fr)/ repeat(1,1fr);
+    grid-gap: 5%;
+    font-size: 1.5em;
+    /* color: #85Acc6; */
+    align-items: center;
+    justify-items: center;
+}
+/* adding style for elements added when correct answer is clicked */ */
+
+
 footer{
     font-size: .9em;
 }
