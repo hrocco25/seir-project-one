@@ -42,8 +42,14 @@ header img{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* .one{
+    display: none;
+} */
+
+
 .q{
     margin: 20% 0;
+    display: none;
 }
 
 
@@ -64,16 +70,21 @@ header img{
     font-size: .8em;
 }
 
+img{
+    width: 50%;
+    border: .15em solid #6d744b;
+}
+
 /* adding style for elements added when correct answer is clicked */
-.response{
+/* .response{
     display: grid;
     grid-template: repeat(1,1fr)/ repeat(1,1fr);
     grid-gap: 5%;
     font-size: 1.5em;
     /* color: #85Acc6; */
-    align-items: center;
-    justify-items: center;
-}
+    /* align-items: center;
+    justify-items: center; */
+/* } */ */
 /* adding style for elements added when correct answer is clicked */ */
 
 
@@ -84,6 +95,7 @@ footer{
 footer img{
     width: 20%;
 }
+
 
 /* ------------------------- */
 

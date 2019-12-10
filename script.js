@@ -11,77 +11,68 @@
 // once it is clicked do not let the user click any other options
 // show the correct answer 
 
+//add button so it clicks it goes to the next question
+//if one is showing then switch to the 
+//next question change display on new question from none
+//and change the previous question display to none 
+// if two is showing go to three
+// 
+
 const incorrect = document.querySelectorAll('.incorrect')
 const correct =document.querySelectorAll('.correct')
-// let response = document.querySelectorAll('.response')
+const response= document.querySelectorAll('.response')
+// const next=document.querySelector('.next')
+// const start= document.querySelector('.start')
+const option = document.querySelector('.option')
+const one = document.querySelector('.one')
+// const two = document.querySelector('.two')
+const q = document.querySelectorAll('.q')
+console.log(q)
+
+let currentQIndex = 0
+let previousQIndex = 0
+
+
+option.addEventListener('click', startTrivia)
+
+function startTrivia(){
+    console.log('start')
+    previousQIndex += currentQIndex
+    q[previousQIndex].style.display= 'none'
+    q[currentQIndex].style.display = 'block'
+    
+    
+   
+}
+
+
 
 for(let i=0; i<correct.length; i++){
     correct[i].addEventListener('click', correctAnswer)
-    
-    //console.log('correct')
+    //console.log('correct') 
+
 }
-
-// for(let i = 0; i<response.length; i++){
-//     response[i].addEventListener('click', response)
-// }
-
-// function response
-
 
 for(let i = 0; i<incorrect.length; i++){
     incorrect[i].addEventListener('click', incorrectAnswer)
 }
+  
+
 function incorrectAnswer(evt){
     console.log('evt for incorrect', evt)
-    evt.target.style.backgroundColor ='red'    
+    evt.target.style.backgroundColor ='#F7A89D' 
 }
-
-
-
-
+    
 function correctAnswer(evt){
     console.log('evt target', evt.target)
     evt.target.style.backgroundColor = '#82ad3e'
-    // for(let i=0; i<response.length; i++){
-    //     response[i].textContent= 'Correct!'
-    // }
-    // response.style.color='#85Acc6'
-    // let img = document.createElement('IMG')
-    // img.setAttribute('src', 'https://media.gettyimages.com/photos/pikes-peak-avenue-colorado-springs-picture-id92414615?b=1&k=6&m=92414615&s=612x612&w=0&h=Ik_wIFzbstuJ1gbSdb87saTejsfsPxdc_hfvT96wWds=')
-    // response.appendChild(img)
-    // img.style.width= '50%'
-    // img.style.border= '.15em solid #6d744b'
-    
 }
 
 
 
 
-// const questions =document.querySelector('#questions')
-// questions.addEventListener('click', answer)
-// function answer(evt){
-//     // use evt.target to get at the class name 
-//     //console.log(evt.target)
-//     if(evt.target.classList.contains('correct')){
-//         console.log('correct')
-        
-      
-        
-
-//     }else if(evt.target.classList.contains('incorrect')){
-//         console.log('incorrect')
-//     }
-// }
 
 
-
-
-
-// button have an active class?
-
-//how to stop it from doing multiple clicks on the button
-//if background color is not green then change it to green 
-//
 
 
 
