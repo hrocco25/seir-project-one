@@ -34,19 +34,14 @@ let score = 0
 //if correct is clicked add one to score
 //else do nothing 
 
-// restart.addEventListener('click', restartTrivia)
-// function restartTrivia(evt){
-//     console.log('this is the restart')
-    // evt.preventDefault()
-    // previousQIndex = currentQIndex
-    // currentQIndex++
-    // console.log(q[currentQIndex])
-    // //q[previousQIndex].style.display= 'none'// removes last question
-    // q[previousQIndex].style.display = 'none'
-    // q[currentQIndex].style.display = 'block'
+restart.addEventListener('click', restartTrivia)
+function restartTrivia(){
+    //change this link to the live page once its updated
+    window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
+  
     
     
-// }
+}
 
 start.addEventListener('click', startTrivia)
 function startTrivia(){
