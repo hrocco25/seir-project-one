@@ -34,9 +34,9 @@ let score = 0
 //if correct is clicked add one to score
 //else do nothing 
 
-restart.addEventListener('click', restartTrivia)
-function restartTrivia(evt){
-    console.log('this is the restart')
+// restart.addEventListener('click', restartTrivia)
+// function restartTrivia(evt){
+//     console.log('this is the restart')
     // evt.preventDefault()
     // previousQIndex = currentQIndex
     // currentQIndex++
@@ -46,7 +46,7 @@ function restartTrivia(evt){
     // q[currentQIndex].style.display = 'block'
     
     
-}
+// }
 
 start.addEventListener('click', startTrivia)
 function startTrivia(){
@@ -82,25 +82,27 @@ function updateScore(){
     
     
     if(score === 10){
-        result.textContent = 'Great job!  Looks like you may be a local 10/10!'
+        result.textContent = '100% Great job!'
     } else if(score === 9  ){
-        result.textContent= 'Great Job! 9/10'
+        result.textContent= '90% Great job!'
     } else if( score === 8){
-        result.textContent = '8/10'
+        result.textContent = '80% Good job!'
     } else if( score === 7){
-        result.textContent= '7/10'
+        result.textContent= '70% Good job!'
     }else if(score === 6){
-        result.textContent = '6/10'
+        result.textContent = '60% Looks like you need to visit!'
     }else if(score === 5){
-        result.textContent = '5/10'
+        result.textContent = '50% Looks like you need to visit!'
     }else if(score === 4){
-        result.textContent = '4/10'
+        result.textContent = '40% Looks like you need to visit!'
     }else if(score === 3){
-        result.textContent = '3/10'
+        result.textContent = '30% Looks like you need to visit!'
     }else if(score === 2){
-        result.textContent= '2/10'
+        result.textContent= '20% Looks like you need to visit!'
     }else if(score === 1){
-        result.textContent = '1/10'
+        result.textContent = '10% Looks like you need to visit!'
+    }else if(score === 0){
+        result.textContent = '0% Looks like you need to visit!'
     }
     
     
