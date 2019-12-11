@@ -47,6 +47,10 @@ header img{
     margin-bottom: 20%;
 }
 
+.start:hover{
+    background-color: #7EB4F7;
+}
+
 
 .q{
     margin: 20% 0;
@@ -81,6 +85,10 @@ header img{
     padding: 3%;
     margin: 5%;
     font-size: .8em;
+}
+
+.option:hover{
+    background-color: #7EB4F7;
 }
 
 .result{
