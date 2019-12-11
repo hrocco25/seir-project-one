@@ -18,7 +18,7 @@
 // if two is showing go to three
 // 
 
-const score = 0
+
 const incorrect = document.querySelectorAll('.incorrect')
 const correct =document.querySelectorAll('.correct')
 const response= document.querySelectorAll('.response')
@@ -28,8 +28,8 @@ const q = document.querySelectorAll('.q')
 //console.log(q)
 let currentQIndex = 0
 let previousQIndex = 0
-
-//if correct add one to score
+let score = 0
+//if correct is clicked add one to score
 //else do nothing 
 
 
@@ -59,20 +59,29 @@ function next(evt){
 
 
 
-
+function updateScore(){
+    score++
+    console.log('updated score', score)
+}
 
 
 // this is not doing anything at the moment
 
-// for(let i=0; i<correct.length; i++){
-//     correct[i].addEventListener('click', correctAnswer)
-//     //console.log('correct') 
+for(let i=0; i<correct.length; i++){
+    correct[i].addEventListener('click', correctAnswer)
+    //console.log('correct') 
 
-// }
-// function correctAnswer(evt){
-//     //console.log('evt target', evt.target)
-//     evt.target.style.backgroundColor = '#82ad3e'
-// }
+}
+function correctAnswer(evt){
+    console.log('evt target', evt.target)
+    //evt.target.style.backgroundColor = '#82ad3e'
+    if(evt.target.classList.contains('correct')){
+        console.log('this is correct')
+        updateScore()
+    }
+}
+
+console.log(score)
 
 // for(let i = 0; i<incorrect.length; i++){
 //     incorrect[i].addEventListener('click', incorrectAnswer)
