@@ -26,7 +26,7 @@ const start= document.querySelector('.start')
 let option = document.querySelectorAll('.option')
 const q = document.querySelectorAll('.q')
 const directions= document.querySelector('.directions')
-
+const restart = document.querySelector('.restart')
 //console.log(q)
 let currentQIndex = 0
 let previousQIndex = 0
@@ -34,7 +34,19 @@ let score = 0
 //if correct is clicked add one to score
 //else do nothing 
 
-
+restart.addEventListener('click', restartTrivia)
+function restartTrivia(evt){
+    console.log('this is the restart')
+    // evt.preventDefault()
+    // previousQIndex = currentQIndex
+    // currentQIndex++
+    // console.log(q[currentQIndex])
+    // //q[previousQIndex].style.display= 'none'// removes last question
+    // q[previousQIndex].style.display = 'none'
+    // q[currentQIndex].style.display = 'block'
+    
+    
+}
 
 start.addEventListener('click', startTrivia)
 function startTrivia(){
@@ -90,7 +102,7 @@ function updateScore(){
     }else if(score === 1){
         result.textContent = '1/10'
     }
-    //result.textContent = score 
+    
     
 }
 console.log('updated score', score)
