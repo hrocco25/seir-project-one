@@ -99,6 +99,18 @@ header img{
     margin: 20%;
 }
 
+.restart{
+    border: .1em hsl(70, 21%, 37%) solid;
+    border-radius: 5em;
+    padding: 3%;
+    margin: 15%;
+    font-size: 1.3em;
+}
+
+.restart:hover{
+    background-color: #7EB4F7;
+}
+
 footer{
     font-size: .8em;
 }
@@ -203,6 +215,10 @@ footer img{
    }
    .result{
         font-size: 2em;
+   }
+
+   .restart{
+       margin: 5% 35%;
    }
    foot img{
        width: 10%
