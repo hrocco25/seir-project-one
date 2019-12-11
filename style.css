@@ -9,6 +9,7 @@ body{
     font-size: 1em;
     margin: 10% 5% 0 5%;
     background-color:  #ffeee5;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1{
@@ -124,6 +125,10 @@ footer img{
     p{
         font-size: .9em;
     }
+
+    header img{
+        max-width: 45%;
+    }
     
     .directions{
         margin: 0;
@@ -131,6 +136,7 @@ footer img{
 
    .start{
       margin:5% 30% 5% 30%;
+      padding: 2%;
    }
 
     .option{
@@ -169,6 +175,8 @@ footer img{
     .start{
         margin: 5% 35% 10% 35%;
         font-size: 1.8em;
+        padding: 1%;
+        border: .1em #6d744b solid;
     }
    
    .q, .one{
