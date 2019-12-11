@@ -34,7 +34,7 @@ p{
 }
 
 
-header img{
+.directions img{
     max-width: 75%;
     border: .25em solid #6e7c2b;
 }
@@ -55,6 +55,10 @@ header img{
 .q{
     margin: 20% 0;
     display: none;
+}
+
+.q img{
+    width: 30%;
 }
 
 .start{
@@ -146,7 +150,7 @@ footer img{
         font-size: .9em;
     }
 
-    header img{
+    directions img{
         max-width: 45%;
     }
     

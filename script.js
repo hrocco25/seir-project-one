@@ -48,7 +48,7 @@ function startTrivia(){
     q[currentQIndex].style.display = 'block' //this will make the first question load
     console.log('current', q[currentQIndex])
     directions.style.display= 'none'
-    //remove the directions and start button
+    //removes the directions and start button
     
 }
 //console.log(q)
