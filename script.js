@@ -25,6 +25,7 @@ const response= document.querySelectorAll('.response')
 const start= document.querySelector('.start')
 let option = document.querySelectorAll('.option')
 const q = document.querySelectorAll('.q')
+const directions= document.querySelector('.directions')
 
 //console.log(q)
 let currentQIndex = 0
@@ -39,6 +40,9 @@ start.addEventListener('click', startTrivia)
 function startTrivia(){
     q[currentQIndex].style.display = 'block' //this will make the first question load
     console.log('current', q[currentQIndex])
+    directions.style.display= 'none'
+    //remove the directions and start button
+    
 }
 //console.log(q)
 
@@ -54,6 +58,7 @@ function next(evt){
     //q[previousQIndex].style.display= 'none'// removes last question
     q[previousQIndex].style.display = 'none'
     q[currentQIndex].style.display = 'block'
+    
    
 }
 
@@ -73,7 +78,7 @@ function updateScore(){
     } else if( score === 7){
         result.textContent= '7/10'
     }else if(score === 6){
-        result.textContent = '6/10 try again'
+        result.textContent = '6/10'
     }else if(score === 5){
         result.textContent = '5/10'
     }else if(score === 4){
