@@ -18,13 +18,14 @@
 // if two is showing go to three
 // 
 
-
+const result = document.querySelector('.result')
 const incorrect = document.querySelectorAll('.incorrect')
 const correct =document.querySelectorAll('.correct')
 const response= document.querySelectorAll('.response')
 const start= document.querySelector('.start')
 let option = document.querySelectorAll('.option')
 const q = document.querySelectorAll('.q')
+
 //console.log(q)
 let currentQIndex = 0
 let previousQIndex = 0
@@ -56,13 +57,40 @@ function next(evt){
    
 }
 
+//const result =document.querySelector('.result').textContent(updatedScore())
 
-
-
+//total score in counsel 
 function updateScore(){
-    score++
-    console.log('updated score', score)
+     score++
+    
+    
+    if(score === 10){
+        result.textContent = 'Great job!  Looks like you may be a local 10/10!'
+    } else if(score === 9  ){
+        result.textContent= 'Great Job! 9/10'
+    } else if( score === 8){
+        result.textContent = '8/10'
+    } else if( score === 7){
+        result.textContent= '7/10'
+    }else if(score === 6){
+        result.textContent = '6/10 try again'
+    }else if(score === 5){
+        result.textContent = '5/10'
+    }else if(score === 4){
+        result.textContent = '4/10'
+    }else if(score === 3){
+        result.textContent = '3/10'
+    }else if(score === 2){
+        result.textContent= '2/10'
+    }else if(score === 1){
+        result.textContent = '1/10'
+    }
+    //result.textContent = score 
+    
 }
+console.log('updated score', score)
+
+
 
 
 // this is not doing anything at the moment
@@ -81,7 +109,7 @@ function correctAnswer(evt){
     }
 }
 
-console.log(score)
+
 
 // for(let i = 0; i<incorrect.length; i++){
 //     incorrect[i].addEventListener('click', incorrectAnswer)
