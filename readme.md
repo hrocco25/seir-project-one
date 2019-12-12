@@ -59,6 +59,7 @@ function startTrivia(){
 
 Loop through all of the option class and have them each have a click event. The function evt.preventDefault() makes the page not reset when it is clicked. It also goes to the next question when user clicks on an answer choice. current question display will change to none and the next one will appear in block.
 
+```
 option.forEach(buttons =>{
     buttons.addEventListener('click', next)
 })
@@ -71,9 +72,11 @@ function next(evt){
     q[previousQIndex].style.display = 'none'
     q[currentQIndex].style.display = 'block'
 }
+```
 
 Loops through everything with the correct class and adds a click event. When it is clicked it calls the updateScore function.  The updateScore function then adds one to it and will add text content depending on how many of the correct class was clicked. 
 
+```
 for(let i=0; i<correct.length; i++){
     correct[i].addEventListener('click', correctAnswer)
     //console.log('correct') 
@@ -114,9 +117,11 @@ function updateScore(){
         result.textContent = '0% Looks like you need to visit!'
     }
 }
+```
 
 I was able to create another div that had a click event that would reload the page with window.location.href=(address of the page goes here)
 
+```
 const restart = document.querySelector('.restart')
 restart.addEventListener('click', restartTrivia)
 function restartTrivia(){
@@ -124,6 +129,7 @@ function restartTrivia(){
     window.location.href=('https://hrocco25.github.io/seir-project-one/')
     //window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
 }
+```
 
 
 ## Issues and Resolution 
