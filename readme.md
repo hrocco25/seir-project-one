@@ -12,7 +12,9 @@ Colorado Springs Trivia App uses HTML, CSS, and Javscript to create a dynamic tr
 ## WireFrames
 
 I used wireframes to plan on the app before starting to code.  I made a few different options until I narrowed it down to the one I thought would work best.
-(add images of wire frames)
+
+Markup : ![picture alt](wireframe1.jpg "Title is optional")
+Markup : ![picture alt](wireframe2.jpg "Title is optional")
 
 ## MVP (Minimum Viable Product)
 
