@@ -52,7 +52,7 @@ I used wireframes to plan on the app before starting to code.  I made a few diff
 
 This is a rough estimate of my time and will keep better track next project but wanted to document what I remembered. 
 
-* It took me a 8 hours to wire frame and design the site in html and css.
+* It took me a 8 hours to wire frame and design the site in html and css. I also made it mobile first.
 * I spent some time doing pseudo code but I did not keep track of that time.
 * I spent time getting the first question to respond to click events and change colors. I didn't end up using most of the function.
 * It took me a day to figure out how to switch question so it only displays one question at a time.
