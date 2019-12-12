@@ -1,33 +1,33 @@
-#Project Overview
+# Project Overview
 
-#Project Links
+## Project Links
 
-[view deployed site](https://hrocco25.github.io/seir-project-one/)
+[View deployed site](https://hrocco25.github.io/seir-project-one/)
 <br>[Github repo](https://github.com/hrocco25/seir-project-one)
 
-##Project Description 
+ ## Project Description 
 
 Colorado Springs Trivia App uses HTML, CSS, and Javscript to create a dynamic trivia game.
 
-##WireFrames
+## WireFrames
 
 I used wireframes to plan on the app before starting to code.  I made a few different options until I narrowed it down to the one I thought would work best.
 (add images of wire frames)
 
-MVP (Minimum Viable Product)
+## MVP (Minimum Viable Product)
 
 Pre-load your app with some questions and answers.
 Test the user's wits & knowledge with Colorado Springs trivia.
 Let the user know if they won and how many questions they got correct.
 
-Post MVP
+## Post MVP
 
 Add a reset button to start the trivia game over again
 Add a start button 
 Only show one question at a time
 Add a different picture for each question  
 
-Components
+## Components
 
 App-This will contain the primary components(Header, Main, and Footer)
 Header-Contain Title of Game
@@ -36,7 +36,7 @@ Questions- Contains all the individual questions with individual questions, img,
 results- shows the results of the questions and has a restart button
 footer- has footer information 
 
-Code Snippets
+## Code Snippets
 
 This starts the trivia game when start is clicked. It makes everything in the directions class disappear because it changes the display none.  It will make the first question load because it is grabbing teh first item in the q array.
 
@@ -121,7 +121,7 @@ function restartTrivia(){
 }
 
 
-Issues and Resolution 
+## Issues and Resolution 
 
 
 I was trying to use a carousel to change questions that would appear on the screen but it would only go to the first question.  I ended up having an extra div in my html in the first question.   
