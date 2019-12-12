@@ -20,7 +20,6 @@
 
 const result = document.querySelector('.result')
 const correct =document.querySelectorAll('.correct')
-const response= document.querySelectorAll('.response')
 const start= document.querySelector('.start')
 let option = document.querySelectorAll('.option')
 const q = document.querySelectorAll('.q')
@@ -30,8 +29,7 @@ const restart = document.querySelector('.restart')
 let currentQIndex = 0
 let previousQIndex = 0
 let score = 0
-//if correct is clicked add one to score
-//else do nothing 
+
 
 restart.addEventListener('click', restartTrivia)
 function restartTrivia(){
@@ -43,7 +41,7 @@ function restartTrivia(){
 start.addEventListener('click', startTrivia)
 function startTrivia(){
     q[currentQIndex].style.display = 'block' //this will make the first question load
-    console.log('current', q[currentQIndex])
+    //console.log('current', q[currentQIndex])
     directions.style.display= 'none'
     //removes the directions and start button  
 }
@@ -53,11 +51,12 @@ option.forEach(buttons =>{
     buttons.addEventListener('click', next)
 })
 function next(evt){
+    //console.log('this is next')
     evt.preventDefault()
-    console.log('this is next')
+    //this prevents the page from default 
     previousQIndex = currentQIndex
     currentQIndex++
-    console.log(q[currentQIndex])
+    //console.log(q[currentQIndex])
     q[previousQIndex].style.display = 'none' //removes last question
     q[currentQIndex].style.display = 'block' //display next question
 }
@@ -67,7 +66,6 @@ function next(evt){
 //total score in counsel 
 function updateScore(){
      score++
-    
     if(score === 10){
         result.textContent = '100% Great job!'
     } else if(score === 9  ){
@@ -92,24 +90,24 @@ function updateScore(){
         result.textContent = '0% Looks like you need to visit!'
     }
 }
-console.log('updated score', score)
+//console.log('updated score', score)
 
 for(let i=0; i<correct.length; i++){
     correct[i].addEventListener('click', correctAnswer)
     //console.log('correct') 
-
 }
 function correctAnswer(evt){
-    console.log('evt target', evt.target)
-    //evt.target.style.backgroundColor = '#82ad3e'
+    //console.log('evt target', evt.target)
+    //evt.target.style.backgroundColor = '#82ad3e' // this was used to change the background color to green but no longer needed
     if(evt.target.classList.contains('correct')){
-        console.log('this is correct')
+        //console.log('this is correct')
         updateScore()
     }
 }
 
 
-
+//this was used to make the background change to red when question appeared all at the same time
+// no longer needed
 // for(let i = 0; i<incorrect.length; i++){
 //     incorrect[i].addEventListener('click', incorrectAnswer)
 // }
