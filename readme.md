@@ -29,17 +29,21 @@ Add a different picture for each question
 
 ## Components
 
-App-This will contain the primary components(Header, Main, and Footer)
-Header-Contain Title of Game
-Directions-Contain Main image, directions for the game, and start button.
-Questions- Contains all the individual questions with individual questions, img, and answer choices
-results- shows the results of the questions and has a restart button
-footer- has footer information 
+| Component | Description |
+| --- | :---: |  
+| App | This will contain the primary components (Header, Main and Footer) & include Routes |
+| Header | Contain title of game |
+| Directions |  Contain Main image, directions for the game, and start button. |
+| Questions | Contains all the individual questions with individual questions, img, and answer choices |
+| Results | Shows the results of the questions and has a restart button |
+| Footer |  Footer information |
+
 
 ## Code Snippets
 
 This starts the trivia game when start is clicked. It makes everything in the directions class disappear because it changes the display none.  It will make the first question load because it is grabbing teh first item in the q array.
 
+```
 const start= document.querySelector('.start')
 const q = document.querySelectorAll('.q')
 let currentQIndex = 0
@@ -51,6 +55,7 @@ function startTrivia(){
     console.log('current', q[currentQIndex])
     directions.style.display= 'none'
 }
+```
 
 Loop through all of the option class and have them each have a click event. The function evt.preventDefault() makes the page not reset when it is clicked. It also goes to the next question when user clicks on an answer choice. current question display will change to none and the next one will appear in block.
 
