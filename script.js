@@ -1,23 +1,3 @@
-//add query selector all for correct
-//add click event listener to correct 
-// when clicked turn background  background green
-// have the word correct below the answer choices 
-// once it is clicked do not allow it to seclect any other options?
-
-//add querry selector all for incorrect
-//add click event listener for incorrect
-//when incorrect is clicked turn background red
-// have the word incorrect below answer choices 
-// once it is clicked do not let the user click any other options
-// show the correct answer 
-
-//add button so it clicks it goes to the next question
-//if one is showing then switch to the 
-//next question change display on new question from none
-//and change the previous question display to none 
-// if two is showing go to three
-// 
-
 const result = document.querySelector('.result')
 const correct =document.querySelectorAll('.correct')
 const start= document.querySelector('.start')
@@ -30,14 +10,6 @@ let currentQIndex = 0
 let previousQIndex = 0
 let score = 0
 
-
-restart.addEventListener('click', restartTrivia)
-function restartTrivia(){
-    //change this link to the live page once its updated
-    window.location.href=('https://hrocco25.github.io/seir-project-one/')
-    //window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
-}
-
 start.addEventListener('click', startTrivia)
 function startTrivia(){
     q[currentQIndex].style.display = 'block' //this will make the first question load
@@ -46,6 +18,7 @@ function startTrivia(){
     //removes the directions and start button  
 }
 //console.log(q)
+
 
 option.forEach(buttons =>{
     buttons.addEventListener('click', next)
@@ -105,6 +78,14 @@ function correctAnswer(evt){
     }
 }
 
+restart.addEventListener('click', restartTrivia)
+function restartTrivia(){
+    //change this link to the live page once its updated
+    window.location.href=('https://hrocco25.github.io/seir-project-one/')
+    //window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
+}
+
+
 
 //this was used to make the background change to red when question appeared all at the same time
 // no longer needed
@@ -115,6 +96,30 @@ function correctAnswer(evt){
 //     //console.log('evt for incorrect', evt)
 //     evt.target.style.backgroundColor ='#F7A89D' 
 // }
+
+
+
+//pseudo code 
+
+//add query selector all for correct
+//add click event listener to correct 
+// when clicked turn background  background green
+// have the word correct below the answer choices 
+// once it is clicked do not allow it to seclect any other options?
+
+//add querry selector all for incorrect
+//add click event listener for incorrect
+//when incorrect is clicked turn background red
+// have the word incorrect below answer choices 
+// once it is clicked do not let the user click any other options
+// show the correct answer 
+
+//add button so it clicks it goes to the next question
+//if one is showing then switch to the 
+//next question change display on new question from none
+//and change the previous question display to none 
+// if two is showing go to three
+// 
     
 
 
