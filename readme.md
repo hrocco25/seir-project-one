@@ -13,10 +13,10 @@ Colorado Springs Trivia App uses HTML, CSS, and Javscript to create a dynamic tr
 
 I used wireframes to plan on the app before starting to code.  I made a few different options until I narrowed it down to the one I thought would work best.
 
-![Alt text](/Users/heather/sei/projects/project-one/img/wirframe1.jpg "Title")
+<img src="https://user-images.githubusercontent.com/49919405/70738220-8991d580-1cd1-11ea-9e83-cc9367dcd2c4.jpg" height='200' width ='200'>
 
-Markup : ![picture alt](wireframe1.jpg "Title is optional")
-Markup : ![picture alt](wireframe2.jpg "Title is optional")
+<img src="https://user-images.githubusercontent.com/49919405/70738608-526ff400-1cd2-11ea-8519-04a4bd9680bc.jpg
+" height= '200' width='200'>
 
 ## MVP (Minimum Viable Product)
 
