@@ -2,9 +2,8 @@
 
 #Project Links
 
-[view deployed site]https://hrocco25.github.io/seir-project-one/
-
-https://github.com/hrocco25/seir-project-one
+[view deployed site](https://hrocco25.github.io/seir-project-one/)
+<br>[Github repo](https://github.com/hrocco25/seir-project-one)
 
 ##Project Description 
 
