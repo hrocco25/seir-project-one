@@ -19,7 +19,6 @@
 // 
 
 const result = document.querySelector('.result')
-//const incorrect = document.querySelectorAll('.incorrect')
 const correct =document.querySelectorAll('.correct')
 const response= document.querySelectorAll('.response')
 const start= document.querySelector('.start')
@@ -46,8 +45,7 @@ function startTrivia(){
     q[currentQIndex].style.display = 'block' //this will make the first question load
     console.log('current', q[currentQIndex])
     directions.style.display= 'none'
-    //removes the directions and start button
-    
+    //removes the directions and start button  
 }
 //console.log(q)
 
@@ -60,9 +58,8 @@ function next(evt){
     previousQIndex = currentQIndex
     currentQIndex++
     console.log(q[currentQIndex])
-    //q[previousQIndex].style.display= 'none'// removes last question
-    q[previousQIndex].style.display = 'none'
-    q[currentQIndex].style.display = 'block'
+    q[previousQIndex].style.display = 'none' //removes last question
+    q[currentQIndex].style.display = 'block' //display next question
 }
 
 //const result =document.querySelector('.result').textContent(updatedScore())
