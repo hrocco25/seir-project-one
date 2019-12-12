@@ -37,7 +37,8 @@ let score = 0
 restart.addEventListener('click', restartTrivia)
 function restartTrivia(){
     //change this link to the live page once its updated
-    window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
+    window.location.href=('https://hrocco25.github.io/seir-project-one/')
+    //window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
 }
 
 start.addEventListener('click', startTrivia)
