@@ -1,15 +1,16 @@
-Project Overview
+#Project Overview
 
-Project Links
+#Project Links
 
-https://hrocco25.github.io/seir-project-one/
+[view deployed site]https://hrocco25.github.io/seir-project-one/
+
 https://github.com/hrocco25/seir-project-one
 
-Project Description 
+##Project Description 
 
 Colorado Springs Trivia App uses HTML, CSS, and Javscript to create a dynamic trivia game.
 
-WireFrames
+##WireFrames
 
 I used wireframes to plan on the app before starting to code.  I made a few different options until I narrowed it down to the one I thought would work best.
 (add images of wire frames)
@@ -120,6 +121,11 @@ function restartTrivia(){
     //window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
 }
 
+
+Issues and Resolution 
+
+
+I was trying to use a carousel to change questions that would appear on the screen but it would only go to the first question.  I ended up having an extra div in my html in the first question.   
 
 
 
