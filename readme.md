@@ -15,8 +15,7 @@ I used wireframes to plan on the app before starting to code.  I made a few diff
 
 <img src="https://user-images.githubusercontent.com/49919405/70738220-8991d580-1cd1-11ea-9e83-cc9367dcd2c4.jpg" height='200' width ='200'>
 
-<img src="https://user-images.githubusercontent.com/49919405/70738608-526ff400-1cd2-11ea-8519-04a4bd9680bc.jpg
-" height= '200' width='200'>
+<img src="https://user-images.githubusercontent.com/49919405/70738608-526ff400-1cd2-11ea-8519-04a4bd9680bc.jpg" height= '200' width='200'>
 
 ## MVP (Minimum Viable Product)
 
