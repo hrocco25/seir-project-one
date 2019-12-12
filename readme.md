@@ -16,16 +16,26 @@ I used wireframes to plan on the app before starting to code.  I made a few diff
 
 ## MVP (Minimum Viable Product)
 
-Pre-load your app with some questions and answers.
-Test the user's wits & knowledge with Colorado Springs trivia.
-Let the user know if they won and how many questions they got correct.
+* Pre-load your app with some questions and answers.
+* Test the user's wits & knowledge with Colorado Springs trivia.
+* Let the user know if they won and how many questions they got correct.
 
 ## Post MVP
 
-Add a reset button to start the trivia game over again
-Add a start button 
-Only show one question at a time
-Add a different picture for each question  
+* Add a reset button to start the trivia game over again
+* Add a start button 
+* Only show one question at a time
+* Add a different picture for each question  
+
+## Post Post MVP
+
+* Things I would like to add to it in the future
+    * Timer
+    * A second trivia choice on another subject 
+    * Keep track of high score even if page is reloaded
+    * Users can compete against each other with a high core board
+
+
 
 ## Components
 
@@ -37,6 +47,22 @@ Add a different picture for each question
 | Questions | Contains all the individual questions with individual questions, img, and answer choices |
 | Results | Shows the results of the questions and has a restart button |
 | Footer |  Footer information |
+
+## Time
+
+This is a rough estimate of my time and will keep better track next project but wanted to document what I remembered. 
+
+* It took me a 8 hours to wire frame and design the site in html and css.
+* I spent some time doing pseudo code but I did not keep track of that time.
+* I spent time getting the first question to respond to click events and change colors. I didn't end up using most of the function.
+* It took me a day to figure out how to switch question so it only displays one question at a time.
+* About an hour to get it to display the score at the end
+* About a half hour to get it to restart the game at the end
+* I went back and changed the styles of things once I was able to get the javascript working.  I unfortunately did not keep track of that time.
+* I spent about an 2 hours writing up the readme and cleaning up my html, css, and javascript 
+
+
+
 
 
 ## Code Snippets
