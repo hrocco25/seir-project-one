@@ -62,7 +62,7 @@ This is a rough estimate of my time and will keep better track next project but 
 * About an hour to get it to display the score at the end
 * About a half hour to get it to restart the game at the end
 * I went back and changed the styles of things once I was able to get the javascript working.  I unfortunately did not keep track of that time.
-* I spent about an 2 hours writing up the readme and cleaning up my html, css, and javascript 
+* I spent about an 3 hours writing up the readme and cleaning up my html, css, and javascript 
 
 
 
