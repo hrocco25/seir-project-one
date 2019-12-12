@@ -19,7 +19,7 @@
 // 
 
 const result = document.querySelector('.result')
-const incorrect = document.querySelectorAll('.incorrect')
+//const incorrect = document.querySelectorAll('.incorrect')
 const correct =document.querySelectorAll('.correct')
 const response= document.querySelectorAll('.response')
 const start= document.querySelector('.start')
@@ -38,9 +38,6 @@ restart.addEventListener('click', restartTrivia)
 function restartTrivia(){
     //change this link to the live page once its updated
     window.location.href=('file:///Users/heather/sei/projects/project-one/index.html')
-  
-    
-    
 }
 
 start.addEventListener('click', startTrivia)
@@ -65,8 +62,6 @@ function next(evt){
     //q[previousQIndex].style.display= 'none'// removes last question
     q[previousQIndex].style.display = 'none'
     q[currentQIndex].style.display = 'block'
-    
-   
 }
 
 //const result =document.querySelector('.result').textContent(updatedScore())
@@ -74,7 +69,6 @@ function next(evt){
 //total score in counsel 
 function updateScore(){
      score++
-    
     
     if(score === 10){
         result.textContent = '100% Great job!'
@@ -99,15 +93,8 @@ function updateScore(){
     }else if(score === 0){
         result.textContent = '0% Looks like you need to visit!'
     }
-    
-    
 }
 console.log('updated score', score)
-
-
-
-
-// this is not doing anything at the moment
 
 for(let i=0; i<correct.length; i++){
     correct[i].addEventListener('click', correctAnswer)

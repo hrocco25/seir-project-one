@@ -73,6 +73,10 @@ p{
     
 }
 
+#questions img{
+    border: .1em #6d744b solid;
+}
+
 
 .answer{
     display: grid;
