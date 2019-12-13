@@ -53,13 +53,10 @@ p{
 
 
 .q{
-    margin: 20% 0;
+    /* margin: 20% 0; */
     display: none;
 }
 
-.q img{
-    width: 30%;
-}
 
 .start{
     border: .2em hsl(70, 21%, 37%) solid;
@@ -75,6 +72,7 @@ p{
 
 #questions img{
     border: .1em #6d744b solid;
+    width: 70%;
 }
 
 
@@ -170,10 +168,14 @@ footer img{
     .option{
         font-size: 1.2em;
     }
-    .q{
-        margin-top: 10%;
-
+    #questions img{
+        width: 50%;
     }
+    /* .q img{
+        width: 70%;
+        margin-top: 10%;
+    } */
+
    .resultQ{
        margin: 7% 20% 10% 20%;
    }
