@@ -7,7 +7,7 @@
 
  ## Project Description 
 
-Colorado Springs Trivia App uses HTML, CSS, and Javscript to create a dynamic trivia game.
+Colorado Springs Trivia App uses HTML, CSS, and Javascript to create a dynamic trivia game.
 
 ## WireFrames
 
